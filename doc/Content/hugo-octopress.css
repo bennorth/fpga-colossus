@@ -1,0 +1,412 @@
+/*
+The original of this file is part of
+
+https://github.com/parsiya/hugo-octopress/
+
+Modifications are Copyright 2016 Ben North.
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Parsia Hakimian, 2016 Ben North
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "PT Serif",Georgia,Times,"Times New Roman",serif;
+
+}
+ol,
+ul {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none
+}
+a img {
+    border: none
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section, summary {
+    display: block
+}
+a {
+    color: #1863a1
+}
+a:visited {
+    color: #751590
+}
+a:focus {
+    color: #0181eb
+}
+a:hover {
+    color: #0181eb
+}
+a:active {
+    color: #01579f
+}
+html {
+    background: #ffffff top left
+}
+h1, h1 span, h2, h2 span, h3, h3 span, h4, h4 span, h5, h5 span, h6, h6 span {
+    font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif
+/*    font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif */
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    margin-right: 0.5em;
+}
+.mono, pre, code, tt, p code, li code {
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+}
+i { font-style: italic; }
+b { font-weight: bold; }
+body {
+    line-height: 1.444em;
+    color: #111;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizelegibility;
+    margin-bottom: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+h1 {
+    background: #eef;
+    padding: 24px;
+    margin-left: -24px;
+    font-size: 2.2em;
+    line-height: 1.2em
+}
+h2,
+section h1 {
+    background: #eef;
+    padding: 18px;
+    margin-left: -18px;
+    font-size: 1.5em
+}
+h3,
+section h2,
+section section h1 {
+    font-size: 1.3em
+}
+h4,
+section h3,
+section section h2,
+section section section h1 {
+    font-size: 1em
+}
+h5,
+section h4,
+section section h3 {
+    font-size: .9em
+}
+h6,
+section h5,
+section section h4,
+section section section h3 {
+    font-size: .8em
+}
+p,
+article blockquote,
+ul,
+ol {
+    margin-bottom: 0.8em; /* changed this from 1.5em to 0.8 */
+}
+ul {
+    list-style-type: disc
+}
+ul ul {
+    list-style-type: circle;
+    margin-bottom: 0px
+}
+ul ul ul {
+    list-style-type: square;
+    margin-bottom: 0px
+}
+ol {
+    list-style-type: decimal
+}
+ol ol {
+    list-style-type: lower-alpha;
+    margin-bottom: 0px
+}
+ol ol ol {
+    list-style-type: lower-roman;
+    margin-bottom: 0px
+}
+ul,
+ul ul,
+ul ol,
+ol,
+ol ul,
+ol ol {
+    margin-left: 1.3em
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin-bottom: 0em
+}
+strong { font-weight: bold }
+em { font-style: italic }
+sup, sub {
+    font-size: 0.75em;
+    position: relative;
+    display: inline-block;
+    padding: 0 .2em;
+    line-height: .8em
+}
+sup { top: -.5em }
+sub { bottom: -.5em }
+q { font-style: italic }
+em, dfn { font-style: italic }
+strong, dfn { font-weight: bold }
+del, s { text-decoration: line-through }
+abbr, acronym { border-bottom: 1px dotted; cursor: help }
+hr { margin-bottom: 0.2em }
+small { font-size: .8em }
+big { font-size: 1.2em }
+blockquote {
+    font-style: italic;
+    position: relative;
+    padding-left: 1.5em;
+    border-left: 4px solid rgba(170, 170, 170, 0.5);
+    margin: 1.25em 0px;
+    margin-right: 2.5em;
+}
+blockquote cite {
+    font-style: italic
+}
+blockquote cite a {
+    color: #aaa !important;
+    word-wrap: break-word
+}
+@media only screen and (min-width: 992px) {
+    blockquote {
+        padding-left: 2.25em;
+        border-left-width: 8px;
+        margin-right: 4.0em;
+    }
+}
+.force-wrap, article a, aside.sidebar a {
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+#postamble, #content, .sidebar { *zoom: 1 }
+body {
+    -webkit-text-size-adjust: none;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+body #content, body #postamble { margin: 0px auto 2.5em; }
+body {
+    padding-left: 18px;
+    padding-right: 18px
+}
+@media only screen and (min-width: 480px) {
+    body #content, body #postamble {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+}
+@media only screen and (min-width: 768px) {
+    body #content, body #postamble {
+        padding-left: 35px;
+        padding-right: 35px
+    }
+}
+#content {
+    overflow: hidden
+    width: 100%
+}
+div.figure svg, div.figure img { display: block; margin: 1.5em auto }
+
+#postamble p {
+    background: #eee;
+    padding: 0em 2.5em;
+}
+
+#postamble p:first-child {
+    padding-top: 1.5em;
+}
+
+#postamble p:last-child {
+    padding-bottom: 1.5em;
+    margin-bottom: 3em;
+}
+
+#content table#jslicense-labels1 {
+    margin: 0px auto 1.5em;
+    border: 4px solid #eee;
+    background: #eee;
+}
+
+#content table#jslicense-labels1 tr,
+#content table#jslicense-labels1 th,
+#content table#jslicense-labels1 td { border: none; }
+#content table#jslicense-labels1 td { text-align: center; }
+
+.home-link { font-weight: bold; }
+.js-licence { font-style: italic; color: #333; font-size: 0.875em; }
+.js-licence p { margin-top: 0px; margin-bottom: 0px; }
+
+#postamble p { margin: 0px 0px; }
+
+@media only screen and (min-width: 768px) {
+    body {
+        -webkit-text-size-adjust: auto
+    }
+}
+pre {
+    background: #eee;
+    padding: 0.5em 2.0em;
+    line-height: 1.111em;
+    margin: 1em 2em;
+}
+@media only screen and (min-width: 768px) {
+    pre {
+        font-size: 0.875em;
+    }
+}
+p code,
+li code {
+    background: #eee;
+    border: 1px solid #eee;
+    font-size: .875em;
+}
+p pre code,
+li pre code {
+    font-size: 1em !important;
+    background: none;
+    border: none
+}
+table, th, td
+{
+    border-left: 1px solid black; /* remove the right border for when overflow happens */
+    padding: 3px;
+}
+th {
+    font-weight: bold;
+    text-align: center;
+}
