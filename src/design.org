@@ -1,0 +1,652 @@
+This file contains various rough design notes made at different stages
+of the implementation.  Not all of it has been kept up-to-date.
+
+
+* Overall design
+
+Colossus presents a command interface to the outside world.  The inputs
+for this (besides clk) are addr, data, wr_en.  It expects a 1-cycle
+pulse on wr_en, at which point one of its sub-units should respond to
+the command at the address, acknowledging by raising its BUSY line.
+These are OR'd together and the result fed out from Colossus on its BUSY
+line.  When the response is ready on RESP_ERR and RESP, the BUSY line is
+lowered.
+
+The initial empty machine (no sub-units) always has BUSY low.
+
+
+* RPi-facing interface
+
+This has to be asynchronous with the rest of the design.  The actual
+synchronisation blocks will come later.  For now, pretend we have
+sync'd signals from the RPi.  To keep the number of pins down, mux the
+addr, data signals, with a selector.  Protocol from RPi's point of view
+is:
+
+- place data or addr on data_addr_muxd;
+- set/clear data_addr_sel as appropriate;
+- raise req;
+- wait for busy_out to go high;
+- lower req;
+- wait for busy_out to go low;
+- read response from resp_err_out and resp_err.
+
+On the Colossus-facing side of the interface, the protocol is, broadly:
+
+- if data_addr_sel is 'addr', register addr through to ctrl_addr and
+  acknowledge success to RPi;
+- if data_addr_sel is 'data', register data through to ctrl_data and
+  pulse wr_en;
+- if Colossus responds on next clock edge (by raising busy_in), pass
+  this through to busy_out; if no response, give error code to RPi.
+
+** Pin assignment on RPi
+
+*** From RPi to XuLA
+
+**** data_addr_muxd(7 downto 0)
+
+P1-31  GPIO_6 (7)  startup H loc K15
+P1-33  GPIO13 (6)  startup L loc M16
+P1-35  GPIO19 (5)  startup L loc R16
+P1-37  GPIO26 (4)  startup L loc R7
+P1-32  GPIO12 (3)  startup L loc K16
+P1-36  GPIO16 (2)  startup L loc M15
+P1-38  GPIO20 (1)  startup L loc R15
+P1-26  GPIO_7 (0)  startup H loc J16
+
+**** data_addr_sel
+
+P1-29  GPIO_5      startup H loc H1
+
+**** req
+
+P1-40  GPIO21      startup L loc T7
+
+*** From XuLA to RPi
+
+**** busy
+
+P1-11  GPIO17      startup L loc C1
+
+**** response_err
+
+P1-13  GPIO27      startup L loc E2
+
+**** response(7 downto 0)
+
+P1-15  GPIO22 (7)  startup L loc E1
+P1-19  GPIO10 (6)  startup L loc F2  --- also SPI_MOSI but use std fn
+P1-21  GPIO_9 (5)  startup L loc F1  --- also SPI_MISO but use std fn
+P1-23  GPIO11 (4)  startup L loc H2  --- also SPI_CLK but use std fn
+P1-16  GPIO23 (3)  startup L loc C16
+P1-18  GPIO24 (2)  startup L loc F16
+P1-22  GPIO25 (1)  startup L loc F15  --- also SPI_CE0_N but use std fn
+P1-24  GPIO_8 (0)  startup H loc J14  --- also SPI_CE1_N but use std fn
+
+
+* Command target map
+
+'Low' addresses are for the body; 'high' for head/tail.  More precisely:
+
+    addr <  224 (0xe0) : body
+    addr >= 224 (0xe0) : head/tail
+
+or
+
+    addr(7 downto 5) = "111"  iff head/tail
+
+Full list:
+
+** Body
+
+*** Bedstead:
+
+26 --- clear tape
+27 --- read tape (data byte: 'reset ptr' or 'read and advance')
+28 --- reset tape write ptr
+29 --- write tape letter and advance
+
+*** Cam wheels panel:
+
+170--196 incl --- cam-wheels-panel
+
+Base address for individual wheels is pattern register; base+1 is manual
+step/move/query.  Final address (196) is panel-level commands.
+
+*** Q Panel:
+
+80--109 incl --- Q Panel Top Unit config registers (3 per top unit)
+110--119 incl --- Q Panel Bottom Unit config registers (2 per bottom unit)
+120--121 incl --- Q Panel top-level config (top-units negates; global negates)
+
+*** Q Selector:
+
+22 --- control for Q Selector
+23 --- config for Q Selector
+
+*** Counters:
+
+16 --- counters control (reset, accum, snap, read)
+
+*** Comparator:
+
+128 --- read stored values
+130, 131 --- set config for counter 0
+132, 133 --- set config for counter 1
+134, 135 --- set config for counter 2
+136, 137 --- set config for counter 3
+138, 139 --- set config for counter 4
+
+*** Manual Movement:
+
+24 --- manual movement
+
+*** Scheduler:
+
+144 --- manually trigger workers
+
+*** Bus Snoop:
+
+25 --- snoop bus (data byte says which bus)
+
+*** Nibble adder (for testing):
+
+8 --- nibble adder
+
+** Head/tail
+
+*** Printer:
+
+242 --- read (sub-cmds by data)
+243 --- reset write ptr
+244 --- write octet and advance
+
+*** Step count vector unit:
+
+224--236 --- step count vector
+
+*** Scheduler:
+
+240 --- head scheduler
+241 --- tail scheduler
+
+
+* RPi-interfaced Colossus
+
+Combining these two components gives us a Colossus with an interface
+having the RPi-style protocol --- the RPi_Colossus.
+
+
+* Monitor / REPL for testing
+
+To simulate the RPi's interaction with the Colossus, have a project
+which reads from a Unix FIFO and feeds the lines to the RPi interface,
+following the RPi protocol.  (But no real synchronisation required.)
+
+
+* Tape loop
+
+Actual tape contents is held in a BRAM-based CoreGen'd component.  Have
+a 'tape controller' componnt, which obeys monitor commands for
+clearing, writing, reading tape.  A separate 'operational controller'
+for driving the tape for normal calculation use.
+
+Bus 'arbitration' between the two will be simple --- if the
+'controller' for responding to commands wants the bus, it can have it.
+
+Whole thing together is the 'bedstead' as per original.
+
+
+* How to reconcile single moving vs full speed
+
+Want to be able to single-move the tape and check all the buses are as
+expected.  Only wrinkle is in the delta calculators --- they can't latch
+the 'previous' value every clock, because the tape might not be moving
+on on every clock.  It needs another input to say 'this is really a new
+Z/CHI/PSI value'.  When single-moving, will need to delay the chi/psi
+advance so that it happens on the same cycle as the new value emerges
+from RAM.  When full-speed moving, will be fine to hold the 'movement
+happened' line high.
+
+
+* Tape operational controller
+
+Output to RAM is address (via bus arbitrator); input from RAM is
+DATA-OUT (from RAM).
+
+Interface to rest of world is MV_RST and MV_EN in, and Z out.  Users
+must be aware that there is a 3-cycle (or more if we register Z within
+op.ctrlr) delay between MV_EN and the new Z being available, although
+pipelined operation works.
+
+A command target can be 'sprocket-hole advance', which (in the first
+instance) advances Z one position.  It can be aware of this delay.  In
+due course it will need to coordinate movement of CHI and PSI wheels too
+such that new values appear at the Q-Selector simultaneously, and then
+tell the Q-Selector 'new values present' at that cycle.
+
+For free running, some care needed to stagger initial enabling of tape
+and wheels but after that should be simple.
+
+
+* Loading cam wheel patterns
+
+Command target to load least significant bits and shift rest up by 8
+positions.  The top 8 bits are therefore discarded.  By doing this
+enough times you can populate the whole wheel.  Note that for a wheel
+whose n.cams is not a multiple of 8, driver will have to pad to a
+multiple of 8 and right-justify, then write bytes from most-significant
+(which will have some zeros at the top, which will eventually fall out
+the end) to least.  E.g., for a 21-bit wheel:
+
+
+xxxxx xxxxxxxx xxxxxxxx
+
+write 'mmmnnnnn'
+
+xxxxx xxxxxxxx mmmnnnnn
+
+write 'bbbbbbbb'
+
+xxxxx mmmnnnnn bbbbbbbb
+
+write 'cccccccc'
+
+nnnnn bbbbbbbb cccccccc   ['mmm' fell off the left-hand end]
+
+
+* Q Panel
+
+Make this self-contained and then install as a unit into Colossus.
+Ports: the Q stream (clocked); the command in/out bus; a vector of
+five summands, one per counter.  It has no state so doesn't need a
+clock enable.  There is a one-cycle latency between a value of Q being
+presented at the rising edge of the clock, and the corresponding
+counter summand vector being available at the output.
+
+Will be a collection of command targets with output 'or'd together
+(similar to tape-loop RAM).
+
+** Internals
+
+Bunch of configuration registers.  One per top-unit and one per
+bottom-unit too.  One global config: top-unit negates (one per counter),
+global negates (one per counter).
+
+All configs done via 'generic config register', suitably unpacked.
+
+Final summands are the 'and' reduction of the rows' vectors, xor'd with
+the top-negates and the global-negates.
+
+
+* Counters
+
+Combine into counter panel.
+
+** Access to values
+
+One 14-bit wide counter bus.  Selector input to the panel to control
+which counter gets output.  This will need to be 3 bits wide; just too
+many (5) for a 2-bit selector.  Selector will need to be arbitrated
+between snooping (see next) and general control.  (And maybe latch /
+compare unit also?  Or that might be the only 'general control'.)
+
+Any clues on how real Colossus did those kind of sequential activities
+like comparing then printing if exceed?
+
+Some snooping ability would be handy.  Can only snoop 8 bits at a time,
+so will need to break into 'high' and 'low' parts.  Need 2 snoop
+targets per counter.  Fine.
+
+** Counters not enabled by any row
+
+End up just counting the number of letters in the tape.  Is that right?
+As in, does it match the real thing and/or the JavaScript version?
+Seems the natural reading of GRT but not explicit anywhere I saw.
+
+
+* Print control
+
+Comparator and write-to-DRAM.
+
+
+* Printer
+
+Chunk of DRAM?  Could be command target for printing as well as for
+reading, for annotating printout.
+
+To avoid stalling, include FIFO?  Still exists some probability of
+filling it, so may as well not?  Will have latch and background print
+anyway.  Latch all counters (sequentially) then 'in the background' do
+comparison and spooling to RAM.  Should finish by the time the tape has
+completed its circuit, but wait will be needed.
+
+Eventually went with a BRAM; smaller than DRAM by large factor but still
+big enough for the outputs we care about.
+
+
+* Abstraction of 'control register' command target
+
+General register with base and n. locations.  Then Eg Q Selector Cfg will
+map bits across to the Q-Sel-Cfg-t out port.  Might waste resources on
+unused bits but never mind.
+
+
+* To include in write-up
+
+Balance of effort for supporting structures (config registers, snoop
+etc) vs ease of actual counting and logic compared to that for original.
+
+
+* Run whole tape once
+
+** Initial thoughts
+
+Sequence is:
+
+Reset counters --- the counter panel has Counter_Ctrl_t input
+Reset all movement (tape and wheels) --- bedstead has a control input,
+as do cam-wheels
+Delay counter enable by one cycle if there is a 'delta' involved
+Enable tape movement
+(Wait for tape pipeline to nearly fill)
+Enable cam-wheel movement
+Enable Q-Selector
+(Wait for summands to become available from Q-Panel)
+Enable counters
+
+Wait for aug_z.STOP to become 1
+Wait right number of cycles
+Disable everything (counters, bedstead, Q-sel, cam-wheel move)
+Pulse 'output-en' of counters
+
+Therefore needs to be able to control:
+
+bedstead (reset, enable)
+cam-wheels (reset, enable)
+Q-selector (reset, enable)
+counters (reset, enable, output)
+
+The Q-Panel is stateless so needs no reset / enable.
+
+Suspect will be some cycle-counting to get all that synch'd correctly.
+
+Want to be able to do 'run tape once' under manual (cmd) control,
+leaving counter values in their registers.
+
+But also want to re-use logic for automatic short/long stepped runs.
+Probably easier to instantiate twice rather than attempt to share one
+instantiation?
+
+Any overlap between what the 'run tape once' controller will need to
+control and what the between-loops control will need?  Don't think so
+--- between loops we control the cam-wheels' stepping and the printer
+but not bedstead, cam-wheel movement, Q-sel, or counters.
+
+Might turn out to be annoying to have unified cam-wheels' stepping and
+movement control but we'll see.
+
+** Final design
+
+Pipeline of data-slots and worker processes, controlled by schedulers.
+
+
+* Perform whole 'run'
+
+'Short run' is just through all steppings of one wheel; 'long run' is
+of more than one --- I think exactly two in fact.
+
+Sequence (although some bits can proceed in parallel):
+
+Run tape once
+Compare counter values to their Set Total values
+Print if any satisfy their thresold
+Step wheel/s
+If all wheels back at stepping==0, halt; o/w repeat
+
+
+* Stepping
+
+Stepping options per wheel are:
+
+Do not step
+Step 'fast' --- step one cam per loop of the tape
+Step 'fast' and trigger 'slow' --- step one cam per loop and carry to
+'slow' wheel steppings when back to start
+Step 'slow' --- step one cam whenever any 'fast'-and-trigger wheel
+reaches its starting position
+
+Stepping can be initiated as soon as movement has been reset and tape
+is running, although do need to ensure stepping is finished before
+starting next loop (in case of very short tapes)
+
+Need to provide output for cam wheels saying what their stepping is,
+and ensure we don't confuse ourselves if we update stepping while in
+the middle of thinking about printing.  (Copy values from stepping
+counters into comparator panel.)
+
+Alternative (and I think preferred) way of thinking of stepping config
+is as a combination of bits.  Not all combinations make sense.  Bits
+are:
+
+F  --- Fast stepping
+S  --- Slow stepping
+Ts --- Trigger slow-stepping wheels
+Ir --- Ignore for 'repeat lamp' purposes
+
+
+* Scheduling panel?
+
+Would it make sense to have something like this?  A command target
+which can do 'one loop' and 'full run'?  Probably, yes, but still need
+the component which can orchestrate a 'loop' (in the first instance).
+
+Moving towards this design now.  Scheduler panel will contain the
+various pipeline components (source, join, tee, pipe, sink) and also the
+'workers' which move and transform data from one 'single-element queue'
+to another.  Acting as a command target, it can manually trigger any
+individual worker, as well as run the whole 'short run' or 'long run'.
+
+This is now (20160213) the settled-on design.  Data-flow between
+'slots', with data-flow-control components orchestrating the
+transformation of data from one slot to another via workers.
+
+Works nicely.
+
+** Slots
+
+slot_initiate_run --- signalled 'ready' by command; whole process waits
+for this to become non-busy before waiting for 'everything else idle'
+
+slot_step_count_vector --- reduce_all_idle in head_scheduler_panel
+
+Within each body:
+
+slot_body_stepped_pattern --- split into 'rdy' and 'bsy'; noted in
+reduce_all_idle in head_scheduler_panel
+
+slot_joined_ctr_cmpnds_step_labels == slot_print_record --- noted in
+assess_all_idle in tail_scheduler_panel
+
+slot_counter_comparands --- noted in assess_all_idle in scheduler_panel
+slot_latched_ctrs --- noted in assess_all_idle in scheduler_panel
+slot_live_ctrs --- noted in assess_all_idle in scheduler_panel
+slot_active_pattern --- noted in assess_all_idle in scheduler_panel
+slot_stepping_settings --- noted in assess_all_idle in scheduler_panel
+slot_stepping_settings_1 --- noted in assess_all_idle in scheduler_panel
+slot_stepping_settings_2 --- noted in assess_all_idle in scheduler_panel
+slot_stepping_labels --- noted in assess_all_idle in scheduler_panel
+
+
+** Run tape once worker
+
+Where should this live?  Possibly in its own 'worker' component?
+Rename 'manual_movement' to 'movement_controller' and make it be a
+process within that?  Exports 'req' and 'done' as ports; stops being
+able to do that as a cmd-target.  Instead, scheduler-panel can trigger
+it as a command tgt.
+
+Input: the current stepping settings as implicitly stored in the
+zero-movement positions of the wheels.
+
+Output: counts in the 'live' counters
+
+Needs to control:
+
+    bedstead_ctrl_o.mv_rst
+    bedstead_ctrl_o.mv_en
+    cam_wheel_ctrl_o.move_rst
+    cam_wheel_ctrl_o.move_en
+    counter_ctrl_o.count_rst
+    counter_ctrl_o.count_en
+    counter_ctrl_o.output_en -- but maybe not, if counts to be left in 'live'?
+    q_sel_ctrl_o.rst
+    q_sel_ctrl_o.en
+
+Needs to sense:
+
+    z_stop_i
+
+
+* Original remarks on testing
+
+From General Report on Tunny (book):
+
+    The early difficulties were sufficiently severe to prevent more than
+    three messages from being set in any week in the first three months
+    of operation.  They arose partly from machine faults (incorrect
+    tapes from Tunny and incorrect counts on Robinson), partly from
+    operator's error.  The standard of accuracy needed before there was
+    any possibility of success was very much higher than would
+    ordinarily be required of this kind of apparatus, or of operators.
+    A single letter omitted in a tape destroyed the value of the run and
+    the ordinary length of a tape was about 3000 letters.  A count
+    missed at the beginning of a run of Robinson gave wheel settings
+    bearing no simple relations to the true ones.  In addition there
+    were numerous opportunities for wrong plugging, switching, and
+    tape-setting on both machines.  An error which passed undetected
+    through several stages of the work could take hours or even days to
+    track down.
+
+    To remedy this state of affairs a system of checks was gradually
+    evolved which made it a rare occurrence for a mistake to persist
+    through several operations.  To achieve this very elaborate checks
+    were necessary, and about half the operational time was occupied in
+    carrying them out.  It was made a principal that the design of a new
+    routine must include all the checks required, and in estimating the
+    merits of a proposed routine the nature of the checks required had
+    always to be taken into account.  It is for this reason that checks
+    are described so fully in the chapters that follow.
+
+[p.40, S.15B(b)]
+
+
+* Collation of TODOs etc from notebooks
+
+Notation 'stepping' vs 'moving'.
+
+Interlinked single-element queues.  'Source' iterator/generator, 'sink',
+'tee' and 'join' --- care over ownership semantics; get away with slight
+sloppiness in our case.  Motivated by real Colossus's ability to print
+one set of results (latched on relays TODO REF) while computing next
+one.  CSP-ish 'pipeline's with queue-slot-controller driving worker.
+Also able to manually trigger a worker.
+
+No 'triggers' --- load wheel patterns as required from software.
+
+Map Colossus switches to bit/s in configuration registers.  Sometimes
+will have combinations of bits which have 'implementation defined'
+behaviour --- a three-posn switch in real Colossus has 2 bits so 4
+values in ours.  Some real Colossus configs were not well specified
+either (e.g. stepping control p.319).
+
+Controllable tape rather than 'constantly spinning tape generating
+clock as in real Colossus'.
+
+Definition of 'delta' (p.320): forward vs backward difference.  Aim to
+match ipynb's calculations.
+
+Long run via all wheels stepping 'fast' ought to work too?  Generate
+same set of results but perhaps in less useful order.
+
+Print record: dump everything; real Colossus only prints relevant
+counters, settings (SIP, p.321).
+
+General approach of 'core' vs 'unit' vs 'panel'.  Not universally
+followed but mostly.
+
+Unit testing fiddly to set up but well worth it.  Cf quote on testing
+from real Colossus.  Nibble-adder.  'Snoop bus' facility.  Ability to
+swap in real FPGA and use same unit tests.
+
+Experiences getting internal compiler error in Simulator Compiler.  See
+https://forums.xilinx.com/t5/Simulation-and-Verification/Internal-Compiler-Error-in-file-src-VhdlExpr-cpp-at-line-792/td-p/465376
+"bad luck; yes, we are selling parts whose only tools are broken but we're
+not going to fix it"
+
+RAM size to match 'large Colossus' which had 20k-letter bedstead.
+
+Adoption of Colossus terminology where appropriate.
+
+Actual individual-units' logic a very small part of overall project.
+Lots of: scheduling, configuration and testability.
+
+Diagnostic counters: cycle count; tape-loop count.
+
+Considered Python/C implementation with same observable state as VHDL
+while not busy, but permitted to do things differently while busy.
+Didn't do this.
+
+State machine coding (internal Program Counter) like basic blocks in
+compiled languages.  Fairly mechanical in some ways.
+
+Daisy-chain one Colossus body to the next; separation of 'head' from
+'body'.  History of fused head/body design turning into separated
+head/bodies?
+
+Q-Selectors including a delta --- delay count-enable by one cycle to
+match Python and also real Colossus (p.97(c)).
+
+
+* Future work
+
+** 'Busy' LED
+
+Wire actual LED to XuLA to indicate that processing of a command is
+underway.  Would mostly flash only very briefly, but for a 'long run'
+it would stay on for a noticeable period.
+
+** Organise error codes and other magic numbers
+
+Plenty of arbitrarily-chosen error codes, to try to distinguish between
+failures.  Haven't tested these cases.  For completeness, would define
+a sensible set of error codes and test them.
+
+** More bodies
+
+On a larger FPGA, instantiate / generate more than two bodies and wire
+them up appropriately.
+
+** Tidy up tape loop design
+
+Was first one done, so inefficient in use of address-space slots.
+Could be tidied up to use fewer slots via sub-commands.
+
+** Use clock multiplier to get higher speed
+
+Currently uses native 12MHz crystal to drive clock.  Initial
+experiments with clock multiplier worked in simulation but not for
+real.  Web suggests this can be a difficult thing to get right.
+
+
+* Licence
+
+Copyright 2016 Ben North
+
+This file is part of "FPGA Colossus".
+
+The contents of this file are licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.
+
+http://creativecommons.org/licenses/by-sa/4.0/

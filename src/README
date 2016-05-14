@@ -1,0 +1,3 @@
+To build:
+
+fuse --prj monitor.prj --top monitor --out monitor-repl

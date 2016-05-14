@@ -1,0 +1,22 @@
+# Emacs backup files
+*~
+
+# Xilinx tool logs etc.
+isim/
+isim.wdb
+fuse.log
+fuseRelaunch.cmd
+fuse.xmsgs
+isim.log
+*.wcfg
+*.lso
+*.xrpt
+xst/
+_xmsgs/
+
+# Simulation executable
+src/monitor-repl
+
+# Python caches
+tests/.cache/
+__pycache__/

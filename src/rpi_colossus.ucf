@@ -1,0 +1,47 @@
+# Copyright 2016 Ben North
+#
+# This file is part of "FPGA Colossus".
+#
+# "FPGA Colossus" is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
+#
+# "FPGA Colossus" is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+# more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# "FPGA Colossus".  If not, see <http://www.gnu.org/licenses/>.
+
+
+net clk loc=A9;  # 12MHz clock input
+net "clk" TNM_NET = "fpgaClk_i";
+TIMESPEC "TSfpgaClk_i" = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;
+
+net data_addr_muxd<7> loc=K15;
+net data_addr_muxd<6> loc=M16;
+net data_addr_muxd<5> loc=R16;
+net data_addr_muxd<4> loc=R7;
+net data_addr_muxd<3> loc=K16;
+net data_addr_muxd<2> loc=M15;
+net data_addr_muxd<1> loc=R15;
+net data_addr_muxd<0> loc=J16;
+
+net data_addr_sel loc=H1;
+
+net req_async loc=T7;
+
+net busy loc=C1;
+
+net resp_err loc=E2;
+
+net resp<7> loc=E1;
+net resp<6> loc=F2;
+net resp<5> loc=F1;
+net resp<4> loc=H2;
+net resp<3> loc=C16;
+net resp<2> loc=F16;
+net resp<1> loc=F15;
+net resp<0> loc=J14;

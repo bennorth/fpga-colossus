@@ -1,0 +1,4 @@
+This directory should be populated with two components generated from
+the "Core Generator" component of ISE.  Both use the "Block Memory
+Generator", and the design used version 7.4.  Settings as in the two XCO
+files.

@@ -1,0 +1,2714 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1200"
+   height="1580"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="data_flow.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible">
+      <path
+         id="path4327"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4309"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         id="path4321"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path4303"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70566423"
+     inkscape:cx="415.5211"
+     inkscape:cy="1170.0604"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-global="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     fit-margin-top="20"
+     fit-margin-left="20"
+     fit-margin-right="20"
+     fit-margin-bottom="20"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="false"
+     showborder="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="485.5px"
+       originy="194.32032px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(485.5,333.31751)">
+    <path
+       style="fill:none;stroke:#489848;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 20,1132.3622 -60,0 0,-380.00001"
+       id="path3393"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3399"
+       d="m -60,742.36219 0,420.00001 70,0"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="144"
+       y="762.36218"
+       id="text3305"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3307"
+         x="144"
+         y="762.36218">z</tspan></text>
+    <rect
+       style="fill:#92b9f3;fill-opacity:1;stroke:none"
+       id="rect3240"
+       width="420"
+       height="280"
+       x="220"
+       y="-307.63782"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <rect
+       y="332.36218"
+       x="345"
+       height="170"
+       width="170"
+       id="rect3231"
+       style="fill:#92b9f3;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <rect
+       y="2.3621712"
+       x="455"
+       height="300"
+       width="230"
+       id="rect7246"
+       style="fill:#92b9f3;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <rect
+       style="fill:#92b9f3;fill-opacity:1;stroke:none"
+       id="rect7244"
+       width="230"
+       height="300"
+       x="175"
+       y="2.3621712"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g6542"
+       transform="translate(-9.9999953,-425.00001)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         y="647.36218"
+         x="195"
+         height="59.999996"
+         width="110"
+         id="rect4123"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3943"
+         y="662.46472"
+         x="249.97656"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="662.46472"
+           x="249.97656"
+           id="tspan3949"
+           sodipodi:role="line">maybe print</tspan><tspan
+           y="674.46472"
+           x="249.97656"
+           id="tspan3951"
+           sodipodi:role="line">[comparator panel</tspan><tspan
+           y="686.46472"
+           x="249.97656"
+           sodipodi:role="line"
+           id="tspan3298">talking to</tspan><tspan
+           y="698.46472"
+           x="249.97656"
+           sodipodi:role="line"
+           id="tspan3300">printer panel]</tspan></text>
+    </g>
+    <g
+       id="g6586"
+       transform="translate(-5,-1.2734375e-5)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         ry="17.25"
+         y="-157.63782"
+         x="360"
+         height="40"
+         width="150"
+         id="rect4031"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4033"
+         y="-141.00403"
+         x="434.99707"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="-141.00403"
+           x="434.99707"
+           id="tspan4043"
+           sodipodi:role="line">step-count vector</tspan><tspan
+           y="-129.00403"
+           x="434.99707"
+           id="tspan4045"
+           sodipodi:role="line">[step-count vector unit]</tspan></text>
+    </g>
+    <g
+       id="g6624"
+       transform="translate(15,9.9999909)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4049"
+         width="130"
+         height="59.999996"
+         x="215"
+         y="-117.63782" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="279.61328"
+         y="-102.53528"
+         id="text4051"
+         sodipodi:linespacing="100%"><tspan
+           y="-102.53528"
+           x="279.61328"
+           id="tspan4069"
+           sodipodi:role="line">set-step-count cmd</tspan><tspan
+           y="-90.535278"
+           x="279.61328"
+           id="tspan4071"
+           sodipodi:role="line">[step-count vector unit</tspan><tspan
+           y="-78.535278"
+           x="279.61328"
+           sodipodi:role="line"
+           id="tspan3276">talking to</tspan><tspan
+           y="-66.535278"
+           x="279.61328"
+           sodipodi:role="line"
+           id="tspan3278">cam wheels panel]</tspan></text>
+    </g>
+    <g
+       id="g6618"
+       transform="translate(15,-10.000013)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         y="-212.63782"
+         x="215"
+         height="39.999996"
+         width="130"
+         id="rect4127"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4129"
+         y="-195.53528"
+         x="279.99707"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="-195.53528"
+           x="279.99707"
+           id="tspan4139"
+           sodipodi:role="line">stepping generator</tspan><tspan
+           y="-183.53528"
+           x="279.99707"
+           id="tspan4141"
+           sodipodi:role="line">[step-count vector unit]</tspan></text>
+    </g>
+    <g
+       id="g6607"
+       transform="translate(-5,-10.000013)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4153"
+         width="80"
+         height="29.999998"
+         x="395"
+         y="-207.63782" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="434.99121"
+         y="-194.56848"
+         id="text4155"
+         sodipodi:linespacing="100%"><tspan
+           y="-194.56848"
+           x="434.99121"
+           id="tspan4159"
+           sodipodi:role="line">ITERATE</tspan><tspan
+           id="tspan3306"
+           y="-182.56848"
+           x="434.99121"
+           sodipodi:role="line">SOURCE</tspan></text>
+    </g>
+    <g
+       id="g6598"
+       transform="translate(-5,9.9999909)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         y="-97.637817"
+         x="395"
+         height="19.999998"
+         width="80"
+         id="rect4332"
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4334"
+         y="-83.506958"
+         x="434.77148"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4341"
+           sodipodi:role="line"
+           x="434.77148"
+           y="-83.506958">DISTRIBUTE</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 430,-187.63783 0,20"
+       id="path4401"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 430,-117.63783 0,20"
+       id="path4403"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 390,-77.63783 -30,0"
+       id="path4405"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 390,-202.63783 -30,0"
+       id="path4407"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 415,-67.63783 0,55 -95,0 0,25"
+       id="path4409"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g6550"
+       transform="translate(-34.999995,-310.00001)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect3226"
+         width="80"
+         height="29.999998"
+         x="425"
+         y="662.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="464.83594"
+         y="675.49304"
+         id="text3228"
+         sodipodi:linespacing="100%"><tspan
+           y="675.49304"
+           x="464.83594"
+           sodipodi:role="line"
+           id="tspan3230">COLLECT</tspan><tspan
+           id="tspan3235"
+           y="687.49304"
+           x="464.83594"
+           sodipodi:role="line">SINK</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3277"
+       d="m 320,202.36217 0,115 95,0 0,25"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g6556"
+       transform="translate(-35,-330.00001)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect3289"
+         width="150"
+         height="40"
+         x="390"
+         y="742.36218"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="464.99707"
+         y="759.46472"
+         id="text3291"
+         sodipodi:linespacing="100%"><tspan
+           y="759.46472"
+           x="464.99707"
+           id="tspan3295"
+           sodipodi:role="line">printer paper</tspan><tspan
+           y="771.46472"
+           x="464.99707"
+           sodipodi:role="line"
+           id="tspan3299">[printer panel]</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3301"
+       d="m 430,382.36217 0,20"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g3225"
+       transform="translate(-5,-20.000009)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect3242"
+         width="150"
+         height="40"
+         x="360"
+         y="-267.63782"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="434.99707"
+         y="-250.53528"
+         id="text3244"
+         sodipodi:linespacing="100%"><tspan
+           y="-250.53528"
+           x="434.99707"
+           id="tspan3221"
+           sodipodi:role="line">initiate-run</tspan><tspan
+           y="-238.53528"
+           x="434.99707"
+           id="tspan3223"
+           sodipodi:role="line">[manually triggered]</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3263"
+       d="m 430,-247.63783 0,20"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g6410"
+       transform="translate(-410,-220.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         ry="17.25"
+         y="152.36218"
+         x="90"
+         height="40"
+         width="150"
+         id="rect4103"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3757"
+         y="169.46472"
+         x="164.99707"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="169.46472"
+           x="164.99707"
+           id="tspan3969"
+           sodipodi:role="line">active pattern</tspan><tspan
+           y="181.46472"
+           x="164.99707"
+           id="tspan3971"
+           sodipodi:role="line">[cam wheels panel]</tspan></text>
+    </g>
+    <g
+       id="g4204"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4105"
+         width="150"
+         height="40"
+         x="-320"
+         y="52.362171"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="-245.00293"
+         y="69.464714"
+         id="text3773"
+         sodipodi:linespacing="100%"><tspan
+           y="69.464714"
+           x="-245.00293"
+           id="tspan3977"
+           sodipodi:role="line">live counters</tspan><tspan
+           y="81.464714"
+           x="-245.00293"
+           id="tspan3979"
+           sodipodi:role="line">[counter panel]</tspan></text>
+    </g>
+    <g
+       id="g6432"
+       transform="translate(-410,-180.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         ry="17.25"
+         y="352.36218"
+         x="90"
+         height="39.999996"
+         width="150"
+         id="rect4107"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3783"
+         y="369.46472"
+         x="164.8125"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="369.46472"
+           x="164.8125"
+           id="tspan3985"
+           sodipodi:role="line">latched counters</tspan><tspan
+           y="381.46472"
+           x="164.8125"
+           id="tspan3987"
+           sodipodi:role="line">[counter panel]</tspan></text>
+    </g>
+    <g
+       id="g6447"
+       transform="translate(-410,-160.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4109"
+         width="150"
+         height="39.999996"
+         x="90"
+         y="452.36218"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="164.96191"
+         y="469.46472"
+         id="text3793"
+         sodipodi:linespacing="100%"><tspan
+           y="469.46472"
+           x="164.96191"
+           id="tspan3993"
+           sodipodi:role="line">counter comparands</tspan><tspan
+           y="481.46472"
+           x="164.96191"
+           id="tspan3995"
+           sodipodi:role="line">[comparator panel]</tspan></text>
+    </g>
+    <g
+       id="g6457"
+       transform="translate(-410,-160.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4125"
+         width="150"
+         height="39.999996"
+         x="260"
+         y="452.36218"
+         ry="17.25" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3803"
+         y="469.46472"
+         x="334.99707"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4001"
+           sodipodi:role="line"
+           x="334.99707"
+           y="469.46472">stepping labels</tspan><tspan
+           id="tspan4003"
+           sodipodi:role="line"
+           x="334.99707"
+           y="481.46472">[comparator panel]</tspan></text>
+    </g>
+    <rect
+       y="-17.637831"
+       x="-465"
+       height="60"
+       width="125"
+       id="rect4117"
+       style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3881"
+       y="-3.0040379"
+       x="-402.82227"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089"><tspan
+         sodipodi:role="line"
+         id="tspan4286"
+         x="-402.82227"
+         y="-3.0040379">run tape once</tspan><tspan
+         sodipodi:role="line"
+         id="tspan4288"
+         x="-402.82227"
+         y="8.9959621">[movement controller</tspan><tspan
+         sodipodi:role="line"
+         id="tspan4290"
+         x="-402.82227"
+         y="20.995962">talking to</tspan><tspan
+         sodipodi:role="line"
+         id="tspan4292"
+         x="-402.82227"
+         y="32.995964">several panels]</tspan></text>
+    <g
+       id="g6485"
+       transform="translate(-410,-190.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         y="302.36218"
+         x="-55"
+         height="39.999996"
+         width="125"
+         id="rect4119"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3901"
+         y="319.46472"
+         x="7.3125"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="319.46472"
+           x="7.3125"
+           id="tspan3929"
+           sodipodi:role="line">latch counter values</tspan><tspan
+           y="331.46472"
+           x="7.3125"
+           id="tspan3931"
+           sodipodi:role="line">[counter panel]</tspan></text>
+    </g>
+    <g
+       id="g6477"
+       transform="translate(-410,-170.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4121"
+         width="125"
+         height="59.999996"
+         x="-55"
+         y="392.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="7.3125"
+         y="407.46472"
+         id="text3911"
+         sodipodi:linespacing="100%"><tspan
+           y="407.46472"
+           x="7.3125"
+           id="tspan3937"
+           sodipodi:role="line">load counter values</tspan><tspan
+           y="419.46472"
+           x="7.3125"
+           id="tspan3939"
+           sodipodi:role="line">[comparator panel</tspan><tspan
+           y="431.46472"
+           x="7.3125"
+           sodipodi:role="line"
+           id="tspan3280">talking to</tspan><tspan
+           y="443.46472"
+           x="7.3125"
+           sodipodi:role="line"
+           id="tspan3282">counter panel]</tspan></text>
+    </g>
+    <g
+       id="g6505"
+       transform="translate(-410,-230.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         y="102.36218"
+         x="-55"
+         height="39.999996"
+         width="125"
+         id="rect4115"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4007"
+         y="118.99597"
+         x="7.4970703"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4013"
+           sodipodi:role="line"
+           x="7.4970703"
+           y="118.99597">reset movement</tspan><tspan
+           id="tspan4015"
+           sodipodi:role="line"
+           x="7.4970703"
+           y="130.99597">[cam wheels panel]</tspan></text>
+    </g>
+    <g
+       id="g6405"
+       transform="translate(-410,-230.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4200"
+         width="80"
+         height="19.999998"
+         x="125"
+         y="112.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="164.77148"
+         y="126.49011"
+         id="text4202"
+         sodipodi:linespacing="100%"><tspan
+           y="126.49011"
+           x="164.77148"
+           sodipodi:role="line"
+           id="tspan4204">PIPE</tspan></text>
+    </g>
+    <g
+       id="g6416"
+       transform="translate(-410,-210.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         y="212.36218"
+         x="125"
+         height="19.999998"
+         width="80"
+         id="rect4208"
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4210"
+         y="226.49011"
+         x="164.77148"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4212"
+           sodipodi:role="line"
+           x="164.77148"
+           y="226.49011">PIPE</tspan></text>
+    </g>
+    <g
+       id="g6427"
+       transform="translate(-410,-190.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4240"
+         width="80"
+         height="19.999998"
+         x="125"
+         y="312.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="164.77148"
+         y="326.49011"
+         id="text4242"
+         sodipodi:linespacing="100%"><tspan
+           y="326.49011"
+           x="164.77148"
+           sodipodi:role="line"
+           id="tspan4244">PIPE</tspan></text>
+    </g>
+    <g
+       id="g6438"
+       transform="translate(-410,-170.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         y="412.36218"
+         x="125"
+         height="19.999998"
+         width="80"
+         id="rect4254"
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4256"
+         y="426.49011"
+         x="164.77148"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4258"
+           sodipodi:role="line"
+           x="164.77148"
+           y="426.49011">PIPE</tspan></text>
+    </g>
+    <g
+       id="g6466"
+       transform="translate(-410,-150.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4274"
+         width="80"
+         height="19.999998"
+         x="210"
+         y="522.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="250.39844"
+         y="536.49304"
+         id="text4276"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan4291"
+           sodipodi:role="line"
+           x="250.39844"
+           y="536.49304">JOIN</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,-97.637828 0,20"
+       id="path4352"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,-27.637828 0,20.0000001"
+       id="path4354"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,22.362172 0,20"
+       id="path4356"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,92.362172 0,19.999998"
+       id="path4358"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,142.36217 0,20"
+       id="path4360"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,212.36217 0,20"
+       id="path4362"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,262.36217 0,20"
+       id="path4364"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -245,332.36217 0,15 75,0 0,15"
+       id="path4366"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -150,362.36217 0,-15 75,0 0,-15"
+       id="path4368"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -160,392.36217 0,20"
+       id="path4370"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -150,-157.63783 0,20 75,0 0,10"
+       id="path4374"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <g
+       id="g6519"
+       transform="translate(-475,-330.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         y="212.36218"
+         x="360"
+         height="20"
+         width="80"
+         id="rect4837"
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text4839"
+         y="226.49011"
+         x="399.77148"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           id="tspan4841"
+           sodipodi:role="line"
+           x="399.77148"
+           y="226.49011">PIPE</tspan></text>
+    </g>
+    <g
+       id="g6511"
+       transform="translate(-245,-330.00001)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect4845"
+         width="110"
+         height="59.999996"
+         x="235"
+         y="192.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="290.16992"
+         y="207.46472"
+         id="text4847"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan4857"
+           sodipodi:role="line"
+           x="290.16992"
+           y="207.46472">copy settings</tspan><tspan
+           id="tspan4859"
+           sodipodi:role="line"
+           x="290.16992"
+           y="219.46472">[comparator panel</tspan><tspan
+           sodipodi:role="line"
+           x="290.16992"
+           y="231.46472"
+           id="tspan3294">talking to</tspan><tspan
+           sodipodi:role="line"
+           x="290.16992"
+           y="243.46472"
+           id="tspan3296">cam wheels panel]</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -340,-107.63783 55,0"
+       id="path4869"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -340,12.362172 55,0"
+       id="path4871"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -340,132.36217 55,0"
+       id="path4873"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -340,252.36217 55,0"
+       id="path4875"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <g
+       id="g7102"
+       transform="translate(255.0498,-152.89747)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <rect
+         ry="17.25"
+         y="575.25964"
+         x="-490.0498"
+         height="40"
+         width="150"
+         id="rect3243"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3245"
+         y="592.36218"
+         x="-415.05273"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan3247"
+           x="-415.05273"
+           y="592.36218">printer record</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3249"
+           x="-415.05273"
+           y="604.36218">[comparator panel]</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path5764"
+       d="m 445,-67.63783 0,55 95,0 0,25"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       id="g7086"
+       transform="translate(155,29.99999)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         ry="17.25"
+         y="-7.6378198"
+         x="90"
+         height="40"
+         width="150"
+         id="rect7088"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text7090"
+         y="9.4647198"
+         x="165.0498"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan7092"
+           x="165.0498"
+           y="9.4647198">stepped pattern &amp; counts</tspan><tspan
+           sodipodi:role="line"
+           id="tspan7094"
+           x="165.0498"
+           y="21.46472">[cam wheels panel]</tspan></text>
+    </g>
+    <g
+       id="g7108"
+       transform="translate(735.0498,-412.89747)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect7110"
+         width="150"
+         height="40"
+         x="-490.0498"
+         y="575.25964"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="-415.05273"
+         y="592.36218"
+         id="text7112"
+         sodipodi:linespacing="100%"><tspan
+           y="592.36218"
+           x="-415.05273"
+           id="tspan7114"
+           sodipodi:role="line">printer record</tspan><tspan
+           y="604.36218"
+           x="-415.05273"
+           id="tspan7116"
+           sodipodi:role="line">[comparator panel]</tspan></text>
+    </g>
+    <g
+       id="g7184"
+       transform="translate(155,19.999984)"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect7151"
+         width="100"
+         height="39.999996"
+         x="115"
+         y="72.362183" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="165.00586"
+         y="89.309448"
+         id="text7153"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan7180"
+           sodipodi:role="line"
+           x="165.00586"
+           y="89.309448">BODY PIPELINE</tspan><tspan
+           id="tspan7182"
+           sodipodi:role="line"
+           x="165.00586"
+           y="101.30945">(detail omitted)</tspan></text>
+    </g>
+    <g
+       transform="translate(375,29.99999)"
+       id="g7190"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect7192"
+         width="150"
+         height="40"
+         x="90"
+         y="-7.6378198"
+         ry="17.25" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="165.0498"
+         y="9.4647198"
+         id="text7194"
+         sodipodi:linespacing="100%"><tspan
+           y="9.4647198"
+           x="165.0498"
+           id="tspan7196"
+           sodipodi:role="line">stepped pattern &amp; counts</tspan><tspan
+           y="21.46472"
+           x="165.0498"
+           id="tspan7198"
+           sodipodi:role="line">[cam wheels panel]</tspan></text>
+    </g>
+    <g
+       transform="translate(370,-425.00001)"
+       id="g7226"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="rect7228"
+         width="110"
+         height="59.999996"
+         x="195"
+         y="647.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="249.97656"
+         y="662.46472"
+         id="text7230"
+         sodipodi:linespacing="100%"><tspan
+           sodipodi:role="line"
+           id="tspan7232"
+           x="249.97656"
+           y="662.46472">maybe print</tspan><tspan
+           sodipodi:role="line"
+           id="tspan7234"
+           x="249.97656"
+           y="674.46472">[comparator panel</tspan><tspan
+           id="tspan7236"
+           sodipodi:role="line"
+           x="249.97656"
+           y="686.46472">talking to</tspan><tspan
+           id="tspan7238"
+           sodipodi:role="line"
+           x="249.97656"
+           y="698.46472">printer panel]</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cccc"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 295,252.36217 10,0 0,115 85,0"
+       id="path7240"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="190"
+       y="117.53307"
+       id="text7248"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999"><tspan
+         sodipodi:role="line"
+         id="tspan7250"
+         x="190"
+         y="117.53307">Body 0</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text7252"
+       y="117.53307"
+       x="670"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999"><tspan
+         sodipodi:role="line"
+         id="tspan7256"
+         x="670"
+         y="117.53307">Body 1</tspan></text>
+    <g
+       transform="translate(955.0498,-412.89747)"
+       id="g7258"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         ry="17.25"
+         y="575.25964"
+         x="-490.0498"
+         height="40"
+         width="150"
+         id="rect7260"
+         style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text7262"
+         y="592.36218"
+         x="-415.05273"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan7264"
+           x="-415.05273"
+           y="592.36218">printer record</tspan><tspan
+           sodipodi:role="line"
+           id="tspan7266"
+           x="-415.05273"
+           y="604.36218">[comparator panel]</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7278"
+       d="m 540,132.36217 0,20"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <g
+       transform="translate(375,19.999983)"
+       id="g7268"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999">
+      <rect
+         y="72.362183"
+         x="115"
+         height="39.999996"
+         width="100"
+         id="rect7270"
+         style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text7272"
+         y="89.309448"
+         x="165.00586"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="89.309448"
+           x="165.00586"
+           sodipodi:role="line"
+           id="tspan7274">BODY PIPELINE</tspan><tspan
+           y="101.30945"
+           x="165.00586"
+           sodipodi:role="line"
+           id="tspan7276">(detail omitted)</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3210"
+       d="m -35,-107.63783 25,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       sodipodi:nodetypes="cccc"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 540,202.36217 0,115 -95,0 0,25"
+       id="path3214"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3216"
+       d="m 565,252.36217 -10,0 0,115 -85,0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       x="430"
+       y="487.36218"
+       id="text3233"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999"><tspan
+         sodipodi:role="line"
+         id="tspan3238"
+         x="430"
+         y="487.36218">Tail</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3242"
+       y="-260.48938"
+       x="284.99512"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999"><tspan
+         sodipodi:role="line"
+         id="tspan3246"
+         x="284.99512"
+         y="-260.48938">Head</tspan></text>
+    <g
+       id="g6449"
+       transform="translate(520,-100.00001)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         style="fill:#92b9f3;fill-opacity:1;stroke:none"
+         id="rect3461"
+         width="140"
+         height="70"
+         x="-400"
+         y="772.36218" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3250"
+         y="815.22546"
+         x="-330.18799"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="815.22546"
+           x="-330.18799"
+           id="tspan3252"
+           sodipodi:role="line">Bedstead</tspan></text>
+    </g>
+    <g
+       id="g4272"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         style="fill:#e89e9e;fill-opacity:1;stroke:none"
+         id="rect3465"
+         width="140"
+         height="70"
+         x="260"
+         y="842.36218" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3271"
+         y="873.82263"
+         x="329.17285"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="873.82263"
+           x="329.17285"
+           id="tspan3273"
+           sodipodi:role="line">Movement</tspan><tspan
+           y="895.82263"
+           x="329.17285"
+           sodipodi:role="line"
+           id="tspan3275">Controller</tspan></text>
+    </g>
+    <g
+       id="g6469"
+       transform="translate(520,-100.00001)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         y="1102.3622"
+         x="-500"
+         height="70"
+         width="140"
+         id="rect3467"
+         style="fill:#92b9f3;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="-430.16113"
+         y="1144.9354"
+         id="text3292"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan3301"
+           sodipodi:role="line"
+           x="-430.16113"
+           y="1144.9354">Counters</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="244"
+       y="762.36218"
+       id="text3309"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3311"
+         x="244"
+         y="762.36218">z-stop</tspan></text>
+    <g
+       id="g6440"
+       transform="translate(520,-100.00001)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         style="fill:#92b9f3;fill-opacity:1;stroke:none"
+         id="rect3317"
+         width="140"
+         height="70"
+         x="-600"
+         y="772.36218" />
+      <text
+         xml:space="preserve"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="-529.65088"
+         y="803.93542"
+         id="text3319"
+         sodipodi:linespacing="100%"><tspan
+           sodipodi:role="line"
+           id="tspan3321"
+           x="-529.65088"
+           y="803.93542">Cam</tspan><tspan
+           id="tspan3471"
+           sodipodi:role="line"
+           x="-529.65088"
+           y="825.93542">Wheels</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="195"
+       y="907.36218"
+       id="text3335"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3337"
+         x="195"
+         y="907.36218">q-delta</tspan></text>
+    <rect
+       style="fill:#92b9f3;fill-opacity:1;stroke:none"
+       id="rect3463"
+       width="140"
+       height="70"
+       x="20"
+       y="892.36218"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="90"
+       y="932.36218"
+       id="text3343"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         id="tspan3347"
+         sodipodi:role="line"
+         x="90"
+         y="932.36218">Q Panel</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3355"
+       y="872.36218"
+       x="94"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="872.36218"
+         x="94"
+         id="tspan3357"
+         sodipodi:role="line">q</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="94"
+       y="982.36218"
+       id="text3361"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3363"
+         x="94"
+         y="982.36218">summands</tspan></text>
+    <g
+       id="g6478"
+       transform="translate(520,-100.00002)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         style="fill:#92b9f3;fill-opacity:1;stroke:none"
+         id="rect3469"
+         width="140"
+         height="70"
+         x="-500"
+         y="1212.3622" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text3369"
+         y="1252.7601"
+         x="-430.36523"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         xml:space="preserve"><tspan
+           y="1252.7601"
+           x="-430.36523"
+           sodipodi:role="line"
+           id="tspan3371">Comparator</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3373"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><flowRegion
+         id="flowRegion3375"><rect
+           id="rect3377"
+           width="71.5"
+           height="74.5"
+           x="-503.5"
+           y="1279.5" /></flowRegion><flowPara
+         id="flowPara3379" /></flowRoot>    <text
+       sodipodi:linespacing="100%"
+       id="text3383"
+       y="1102.3622"
+       x="76"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="1102.3622"
+         x="76"
+         id="tspan3385"
+         sodipodi:role="line">counter-sel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="104"
+       y="1092.3622"
+       id="text3389"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3391"
+         x="104"
+         y="1092.3622">counter-val</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="-1028.0055"
+       y="-24.862793"
+       id="text3395"
+       sodipodi:linespacing="100%"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3397"
+         x="-1028.0055"
+         y="-24.862793">step-count-sel</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3401"
+       y="-67.389771"
+       x="-1058.0055"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="-67.389771"
+         x="-1058.0055"
+         id="tspan3403"
+         sodipodi:role="line">step-count-val</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="90"
+       y="1267.3622"
+       id="text3409"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3411"
+         x="90"
+         y="1267.3622">printer-write-ctrl</tspan><tspan
+         sodipodi:role="line"
+         x="90"
+         y="1283.3622"
+         id="tspan7343">[to Printer]</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3413"
+       y="686.36218"
+       x="285"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="686.36218"
+         x="285"
+         id="tspan3415"
+         sodipodi:role="line">bedstead</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="280"
+       y="636.36218"
+       id="text3423"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3425"
+         x="280"
+         y="636.36218">cam-wheels</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3429"
+       y="795.36218"
+       x="265"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="795.36218"
+         x="265"
+         id="tspan3431"
+         sodipodi:role="line">q-sel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="228"
+       y="1025.3622"
+       id="text3435"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3437"
+         x="228"
+         y="1025.3622">counter</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 160,832.36219 30,0 0,60 60,0"
+       id="path3512"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="54"
+       y="762.36218"
+       id="text3518"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3520"
+         x="54"
+         y="762.36218">chi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="24"
+       y="762.36218"
+       id="text3522"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3524"
+         x="24"
+         y="762.36218">psi</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 240,742.36219 0,120 10,0"
+       id="path3526"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <g
+       id="g4267"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <rect
+         y="782.36218"
+         x="20"
+         height="70"
+         width="140"
+         id="rect3248"
+         style="fill:#92b9f3;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="89.672363"
+         y="823.25427"
+         id="text3263"
+         sodipodi:linespacing="100%"><tspan
+           sodipodi:role="line"
+           id="tspan3265"
+           x="89.672363"
+           y="823.25427">Q Selector</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="285"
+       y="707.36218"
+       id="text6410"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan6412"
+         x="285"
+         y="707.36218">ctrl</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text6414"
+       y="657.36218"
+       x="280"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="657.36218"
+         x="280"
+         id="tspan6416"
+         sodipodi:role="line">ctrl</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="265"
+       y="817.36218"
+       id="text6418"
+       sodipodi:linespacing="100%"
+       inkscape:transform-center-x="-2.15625"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan6420"
+         x="265"
+         y="817.36218">ctrl</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text6422"
+       y="1047.3622"
+       x="228"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="1047.3622"
+         x="228"
+         id="tspan6424"
+         sodipodi:role="line">ctrl</tspan></text>
+    <g
+       id="g6677"
+       transform="translate(495,-100.00001)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6673"
+         d="m -344.5,1270.5 5,10 5,-10 -10,0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6675"
+         d="m -339.5,1240.5 0,30"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="translate(495,9.9999844)"
+       id="g6681"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -344.5,1270.5 5,10 5,-10 -10,0"
+         id="path6683"
+         inkscape:connector-curvature="0"
+         transform="translate(-65.5,-288.13782)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -339.5,1240.5 0,30"
+         id="path6685"
+         inkscape:connector-curvature="0"
+         transform="translate(-65.5,-288.13782)" />
+    </g>
+    <g
+       id="g6687"
+       transform="translate(505,119.99998)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6689"
+         d="m -344.5,1270.5 5,10 5,-10 -10,0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6691"
+         d="m -339.5,1240.5 0,30"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g6911"
+       transform="translate(520,-100.00001)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -385,872.36218 5,10 5,-10 -10,0"
+         id="path6695"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -380,842.36218 0,30"
+         id="path6697"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path6701"
+       d="m 45,772.36216 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6703"
+       d="m 50,742.36216 0,30"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <g
+       id="g6705"
+       transform="translate(435,-210.00002)"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6707"
+         d="m -344.5,1270.5 5,10 5,-10 -10,0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="translate(-65.5,-288.13782)"
+         inkscape:connector-curvature="0"
+         id="path6709"
+         d="m -339.5,1240.5 0,30"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 250,867.36219 10,-5 -10,-5 0,10"
+       id="path6713"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6907"
+       d="m 250,897.36219 10,-5 -10,-5 0,10"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6917"
+       d="m 85,1242.3622 5,10 5,-10 -10,0"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6919"
+       d="m 90,1182.3622 0,60"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <g
+       transform="matrix(1,0,0,-1,485,2064.7244)"
+       id="g6921"
+       style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-opacity:1"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5">
+      <path
+         style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -344.5,1270.5 5,10 5,-10 -10,0"
+         id="path6923"
+         inkscape:connector-curvature="0"
+         transform="translate(-65.5,-288.13782)" />
+      <path
+         style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -339.5,1240.5 0,30"
+         id="path6925"
+         inkscape:connector-curvature="0"
+         transform="translate(-65.5,-288.13782)" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path7115"
+       d="m 10,1167.3622 10,-5 -10,-5 0,10"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -35,752.36219 -5,-10 -5,10 10,0"
+       id="path7117"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path3421"
+       d="m 370,842.36217 0,-200 -270,0 0,80 -30,0"
+       style="fill:none;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 70,727.36217 -10,-5 10,-5 0,10"
+       id="path7307"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:none;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 290,842.36217 0,-40 -120,0"
+       id="path3510"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path7309"
+       d="m 170,807.36217 -10,-5 10,-5 0,10"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:none;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 330,842.36219 0,-150.00002 -60,0"
+       id="path3419"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 270,697.36217 -10,-5 10,-5 0,10"
+       id="path7311"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:none;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 290,912.36219 0,120.00001 -120,0"
+       id="path3433"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 170,1037.3622 -10,-5 10,-5 0,10"
+       id="path7313"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:none;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 80,562.36217 0,130 -10,0"
+       id="path7333"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path7335"
+       d="m 70,697.36217 -10,-5 10,-5 0,10"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text7337"
+       y="542.36218"
+       x="80"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         y="542.36218"
+         x="80"
+         id="tspan7339"
+         sodipodi:role="line">set-step-count-cmd</tspan><tspan
+         y="558.36218"
+         x="80"
+         sodipodi:role="line"
+         id="tspan7341">[from Step-Count-Vector unit]</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -80,282.36217 5,10 5,-10 -10,0"
+       id="path3340"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3346"
+       d="m -165,412.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3350"
+       d="m -155,362.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3352"
+       d="m -175,362.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3354"
+       d="m -250,282.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3356"
+       d="m -250,232.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3358"
+       d="m -250,162.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3360"
+       d="m -250,112.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3362"
+       d="m -250,42.362172 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3364"
+       d="m -250,-7.6378279 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3366"
+       d="m -250,-77.637828 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3368"
+       d="m -250,-127.63783 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089" />
+    <g
+       id="g6524"
+       transform="translate(85,1.1975096e-6)"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-ydpi="76.325089">
+      <path
+         inkscape:export-ydpi="76.325089"
+         inkscape:export-xdpi="76.325089"
+         inkscape:export-filename="/tmp/body-pipeline.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path4348"
+         d="m -245,-207.63783 0,20"
+         style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         inkscape:export-ydpi="76.325089"
+         inkscape:export-xdpi="76.325089"
+         inkscape:export-filename="/tmp/body-pipeline.png"
+         transform="translate(-410,-240.00001)"
+         id="g6394">
+        <rect
+           ry="17.25"
+           y="-7.6378198"
+           x="90"
+           height="40"
+           width="150"
+           id="rect4101"
+           style="fill:#a0ffa0;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="100%"
+           id="text3955"
+           y="9.4647198"
+           x="165.0498"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan4308"
+             x="165.0498"
+             y="9.4647198">stepped pattern &amp; counts</tspan><tspan
+             sodipodi:role="line"
+             id="tspan4310"
+             x="165.0498"
+             y="21.46472">[cam wheels panel]</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="76.325089"
+         inkscape:export-xdpi="76.325089"
+         inkscape:export-filename="/tmp/body-pipeline.png"
+         transform="translate(-410,-230.00001)"
+         id="g6400">
+        <rect
+           style="fill:#ffb050;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+           id="rect4314"
+           width="80"
+           height="20.000002"
+           x="125"
+           y="52.362179" />
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+           x="165.12891"
+           y="66.490112"
+           id="text4316"
+           sodipodi:linespacing="100%"><tspan
+             y="66.490112"
+             x="165.12891"
+             sodipodi:role="line"
+             id="tspan4323">TEE</tspan></text>
+      </g>
+      <path
+         inkscape:export-ydpi="76.325089"
+         inkscape:export-xdpi="76.325089"
+         inkscape:export-filename="/tmp/body-pipeline.png"
+         inkscape:connector-curvature="0"
+         id="path3348"
+         d="m -250,-187.63783 5,10 5,-10 -10,0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 540,62.36217 0,20"
+       id="path3372"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 320,62.36217 0,20"
+       id="path3376"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 320,132.36217 0,20"
+       id="path3378"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3374"
+       d="m 320,132.36217 0,20"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 315,12.36217 5,10 5,-10 -10,0"
+       id="path3382"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 315,82.36217 5,10 5,-10 -10,0"
+       id="path3384"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 315,152.36217 5,10 5,-10 -10,0"
+       id="path3386"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 410,342.36217 5,10 5,-10 -10,0"
+       id="path3388"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3380"
+       d="m 410,342.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 425,-167.63783 5,10 5,-10 -10,0"
+       id="path3392"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 425,-97.63783 5,10 5,-10 -10,0"
+       id="path3394"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3390"
+       d="m 425,-97.63783 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3396"
+       d="m 425,-227.63783 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 535,12.36217 5,10 5,-10 -10,0"
+       id="path3400"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 535,82.36217 5,10 5,-10 -10,0"
+       id="path3402"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 535,152.36217 5,10 5,-10 -10,0"
+       id="path3404"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3398"
+       d="m 440,342.36217 5,10 5,-10 -10,0"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 425,402.36217 5,10 5,-10 -10,0"
+       id="path3406"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/whole-pipeline.png"
+       inkscape:export-xdpi="84.709999"
+       inkscape:export-ydpi="84.709999" />
+    <path
+       inkscape:export-ydpi="76.325089"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path6537"
+       d="m -170,-157.63783 0,20 -75,0 0,10"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="76.325089"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6539"
+       d="m -75,-97.63783 0,380"
+       style="fill:none;stroke:#000000;stroke-width:3.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="76.325089"
+       inkscape:export-xdpi="76.325089"
+       inkscape:export-filename="/tmp/body-pipeline.png"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -80,-127.63783 5,10 5,-10 -10,0"
+       id="path6541"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3420"
+       d="m 349.75,1127.3622 10,-5 -10,-5 0,10"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3422"
+       d="m 280,1122.3622 69.75,0"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 349.75,1157.3622 10,5 -10,5 0,-10"
+       id="path3426"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       style="fill:#489848;fill-opacity:1;stroke:#489848;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 280,1162.3622 69.75,0"
+       id="path3428"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <path
+       inkscape:export-ydpi="67.5"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:connector-curvature="0"
+       id="path3430"
+       d="m 349.75,1207.3622 10,-5 -10,-5 0,10"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3436"
+       d="m 280,1202.3622 69.75,0"
+       style="fill:#e82828;fill-opacity:1;stroke:#e82828;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5" />
+    <text
+       inkscape:export-ydpi="67.5"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       sodipodi:linespacing="100%"
+       id="text3444"
+       y="1117.3622"
+       x="344.75"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3448"
+         x="344.75"
+         y="1117.3622">data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="345"
+       y="1157.3622"
+       id="text3450"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-ydpi="67.5"><tspan
+         sodipodi:role="line"
+         id="tspan3458"
+         x="345"
+         y="1157.3622">address</tspan></text>
+    <text
+       inkscape:export-ydpi="67.5"
+       inkscape:export-xdpi="67.5"
+       inkscape:export-filename="/tmp/phys-flow.png"
+       sodipodi:linespacing="100%"
+       id="text3454"
+       y="1197.3622"
+       x="345"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3460"
+         x="345"
+         y="1197.3622">control</tspan></text>
+  </g>
+</svg>
