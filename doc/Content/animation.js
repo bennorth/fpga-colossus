@@ -682,6 +682,7 @@ $(document).ready(function() {
             elt.click(launch_animation);
             elt.style('cursor', 'pointer');
         });
+        click_me_highlight.show();
     }
 
     function disable_click() {
@@ -689,6 +690,7 @@ $(document).ready(function() {
             elt.click(null);
             elt.style('cursor', 'default');
         });
+        click_me_highlight.hide();
     }
 
     function launch_animation() {
