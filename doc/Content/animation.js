@@ -675,7 +675,8 @@ $(document).ready(function() {
     ////////////////////////////////////////////////////////////////////////
 
     var manual_trigger_elts = [slot_f_name['trg'].rect,
-                               slot_f_name['trg'].text];
+                               slot_f_name['trg'].text,
+                               click_me_highlight];
 
     function enable_click() {
         manual_trigger_elts.forEach(function(elt) {
