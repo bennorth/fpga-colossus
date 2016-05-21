@@ -200,6 +200,7 @@ $(document).ready(function() {
     };
 
     var text_spec_i = jQuery.extend({style: 'italic'}, text_spec);
+    var text_spec_large = {family: 'helvetica,arial', weight: 'bold', size: 20};
 
     var stroke_spec = {color: '#000', width: 1.2};
 
@@ -654,6 +655,22 @@ $(document).ready(function() {
         } else
             window.requestAnimationFrame(replay_cycle);
     };
+
+    ////////////////////////////////////////////////////////////////////////
+
+    click_me_substrate = slot_f_name['trg'].rect;
+    click_me_highlight = dgrp.group();
+    click_me_highlight
+        .rect(click_me_substrate.width(), click_me_substrate.height())
+        .radius(20)
+        .move(click_me_substrate.x(), click_me_substrate.y())
+        .fill('none')
+        .stroke({color: '#22f', width: 3.6});
+    click_me_highlight
+        .text('click here to start')
+        .font(text_spec_large)
+        .fill({color: '#22f'})
+        .move(click_me_substrate.x() + x_scale * slot_default_wd + 12, click_me_substrate.y() + 8);
 
     ////////////////////////////////////////////////////////////////////////
 
