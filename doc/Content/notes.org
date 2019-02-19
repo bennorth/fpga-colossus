@@ -261,7 +261,7 @@ worker is to cycle through the following steps.
 - Wait for downstream scheduler to take ownership of our output slot.
 
 The 'tee' and 'join' schedulers are slightly more complex but follow the
-same principals.
+same principles.
 
 
 ** Feeding work-units and collecting results
@@ -371,7 +371,7 @@ in retrospect) would have been to use some kind of serial port.
     evolved which made it a rare occurrence for a mistake to persist
     through several operations.  To achieve this very elaborate checks
     were necessary, and about half the operational time was occupied in
-    carrying them out.  It was made a principal that the design of a new
+    carrying them out.  It was made a principle that the design of a new
     routine must include all the checks required, and in estimating the
     merits of a proposed routine the nature of the checks required had
     always to be taken into account.  It is for this reason that checks
@@ -381,7 +381,7 @@ in retrospect) would have been to use some kind of serial port.
 #+END_QUOTE
 
 I find it interesting that the importance of 'design for testability'
---- /It was made a principal that the design of a new routine must
+--- /It was made a principle that the design of a new routine must
 include all the checks required/ --- was recognised as computers were
 being invented, certainly before 'software engineering' was a
 discipline.  I tried to take this to heart, and every component can be
